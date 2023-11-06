@@ -1,39 +1,85 @@
-.App {
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Header-Section*/
+.header-container {
+  margin-top: 20px;
 }
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.header-right ul {
+  display: flex;
+  padding: 20px;
+}
+
+.header-right ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.header-right ul li a {
+  text-decoration: none;
+  color: #495e57;
+}
+
+.header-right ul li a:hover {
+  background-color: #f4ce14;
+  padding: 1.5rem;
+  border-radius: 1.1rem;
+}
+
+/* Main-Section */
+
+.main-container {
+  background-color: #495e57;
+  height: 344px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  max-width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.hero-section > h1{
+  color:#f4ce14;
+  margin-bottom: 1rem;
+}
+
+.hero-section > h2 {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.hero-section > p {
+  color: white;
+  margin: 2rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-section > a {
+  background-color: #f4ce14;
+  border-radius: 1rem;
+  color: #495e57;
+  width:150px;
+  padding: 0.9rem;
+  text-decoration: none;
 }
+
+
+
