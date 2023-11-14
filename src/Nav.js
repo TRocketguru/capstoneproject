@@ -1,19 +1,22 @@
 import React from 'react';
-import './App.css'
+import './App.css';
+import {Link} from 'react-router-dom';
 
-function Nav() {
-  return (
-    <div className="header-right">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Reservation</a></li>
-      <li><a href="#">Order</a></li>
-      <li><a href="#">Online</a></li>
-      <li><a href="#">Login</a></li>
-    </ul>
-  </div>
+
+function Nav(){
+  return(
+    <>
+    <nav className='navBar-container'>
+      <ul>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/about'>About</Link></li>
+        <li><Link to='/menu'>Menu</Link></li>
+        <li><Link to='/reservation'>Reservation</Link> </li>
+        <li><Link to='/order'>Order Online</Link></li>
+        <li><Link to='/login'>Sign up/Login</Link></li>
+      </ul>
+    </nav>
+    </>
   )
 }
 

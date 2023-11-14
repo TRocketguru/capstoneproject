@@ -1,13 +1,245 @@
-body {
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+}
+
+body {
+  margin-top: 20px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header-app {
+  font-size: 18px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/*Header-Section*/
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  align-items: center;
+
+}
+/* NavBar Section */
+.navBar-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #495e57;
+}
+
+nav ul li a:hover {
+  background-color: #f4ce14;
+  padding: 1.5rem;
+  border-radius: 1.1rem;
+}
+
+
+
+/* Main-Section */
+/* Reservation Section */
+.hero-container {
+  background-color: #495e57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+  max-width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  position: relative;
+}
+
+h1{
+  font-size: 2rem;
+  color:#f4ce14;
+  margin-bottom: 1rem;
+}
+
+.hero-section > h2 {
+  color: white;
+}
+.hero-section > p {
+  color: white;
+  margin: 2rem 0;
+}
+button {
+  background-color: #f4ce14;
+  border-radius: 1rem;
+  color: #495e57;
+  padding: 0.9rem;
+  border: none;
+  cursor:pointer;
+}
+button:hover {
+  background-color: white;
+}
+.hero-section > button {
+  margin: 1rem 0 5rem;
+}
+.hero-image {
+  position: absolute;
+  top: 5rem;
+  right: 2rem
+}
+
+.hero-app {
+  width: 100%;
+}
+
+/* Speacial week section */
+.navBar-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.special-week {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.week-order {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.week-order button:hover {
+  background-color: black;
+  color: white;
+}
+
+.week-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.cards {
+  background-color: rgb(237, 239, 238);
+  display: flex;
+  flex-direction: column;
+  min-height: 31.25rem;
+  padding-bottom: 2.5rem;
+  border-radius: 1rem;
+  grid-column: auto;
+  grid-row: 2;
+  overflow: hidden;
+  position: relative;
+  color: #495e57;
+}
+
+.cards p {
+  margin: 2rem 0;
+  padding: 0.5rem;
+}
+
+.cards-order {
+  position: absolute;
+  bottom: 1rem;
+  left: 0.5rem;
+}
+.cards-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+span {
+  color: rgb(238, 153, 114);
+  font-weight: 700;
+}
+
+.menu-app {
+  margin: 3rem 0;
+}
+
+/* Testimonial section */
+
+/* About Section */
+.description {
+  max-width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.description h2, p{
+  color: #495e57;
+  margin-top: 1rem;
+}
+
+.description-img1 {
+  position: absolute;
+  right: 1rem;
+}
+.description-img2 {
+  position: absolute;
+  top: 15rem;
+  left: 33rem;
+}
+
+.about-app {
+  width: 100%;
+}
+
+/* Footer Section */
+Footer {
+  background-color: #495e57;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  max-width: 75%;
+  justify-content: space-between;
 }
